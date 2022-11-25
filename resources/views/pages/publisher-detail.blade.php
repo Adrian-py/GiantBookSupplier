@@ -9,6 +9,7 @@
         <p class="publisher__email">Email: {{ $publisher->email }}</p>
     </div>
 
+    <h2 class="list-title">Books by {{ $publisher->name }}</h2>
     <div class="books-list">
         @foreach ($books_list as $book)
         <div class="books-list__book">

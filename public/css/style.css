@@ -253,6 +253,10 @@ body {
     margin-bottom: 2vh;
 }
 
+.list-title {
+    margin-bottom: 2vh;
+}
+
 @media only screen and (max-width: 25.875em) {
     .container {
         padding: 4vh 6vw;

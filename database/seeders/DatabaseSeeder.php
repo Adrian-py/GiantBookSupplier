@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
+        // Manually create data for Categories and Publishers
         Categories::create([
             "name" => "Romance",
         ]);
@@ -59,6 +59,8 @@ class DatabaseSeeder extends Seeder
             "image" => "kumata.png",
         ]);
 
+        // Generate data for Book using factory (faker)
+        // Using the has() method to create 2 BookCategory for each Book
         Book::factory(20)->has(BookCategory::factory()->count(2))->create();
     }
 }
